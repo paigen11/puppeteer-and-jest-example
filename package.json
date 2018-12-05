@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Example app using Headless Chrome, Puppeteer and Jest",
   "main": "index.js",
-  "jest" : {
+  "jest": {
     "preset": "jest-puppeteer"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "testSave": "node saveFileExample.js",
+    "testCreate": "node createPDF.js",
+    "testSearch": "node searchGoogle.js"
   },
   "repository": {
     "type": "git",
@@ -28,11 +31,10 @@
     "url": "https://github.com/paigen11/puppeteer-and-jest-example/issues"
   },
   "homepage": "https://github.com/paigen11/puppeteer-and-jest-example#readme",
-  "dependencies": {
-    "puppeteer": "^1.10.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jest": "^23.6.0",
-    "jest-puppeteer": "^3.5.1"
+    "jest-puppeteer": "^3.5.2",
+    "puppeteer": "^1.11.0"
   }
 }
