@@ -7,4 +7,3 @@ describe('Google', () => {
     await expect(page).toMatch('google');
   });
 });
-o
